@@ -1,0 +1,481 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+/* End Fonts */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Navbar Style */
+nav.navbar {
+    z-index: 20;
+}
+nav.navbar .navbar-brand img {
+    width: 80%;
+}
+
+nav.navbar .navbar-toggler {
+    border: 0;
+    color: #16aeca;
+}
+nav.navbar .navbar-toggler:focus {
+    box-shadow: 0;
+    border: 0;
+}
+nav.navbar .navbar-nav a.nav-link {
+    font-size: 16px;
+    color: #e8e8e8;
+    padding: 0px 16px ;
+    line-height: 40px;
+    transition: all 0.5s ease;
+}
+nav.navbar .navbar-nav .nav-item a.nav-link:hover,
+nav.navbar .navbar-nav .nav-item a.nav-link.active {
+    background-color: #ffffff;
+    color: #16aeca;
+}
+
+nav.navbar.notransparent {
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+
+nav.navbar.notransparent .nav-item a.nav-link {
+    color: #16aeca;
+}
+
+nav.navbar.notransparent .nav-item a.nav-link:hover,
+nav.navbar.notransparent .nav-item a.nav-link.active {
+    background-color: #16aeca;
+    color: #dae413;
+}
+
+/* End Navbar Style */
+/* Header Style */
+header {
+    background-image: url(../images/banner/banner1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+header .overlay {
+    background: linear-gradient(to right, rgba(59,158,179,0.8), rgba(170,170,46,0.8));
+    min-height: 100vh;
+}
+
+header .overlay .carousel .carousel-item {
+    position: relative;
+    min-height: 100vh;
+
+}
+
+header .overlay .carousel .carousel-item .carousel-content {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    right: 15%;
+    line-height: 40%;
+    text-align: center;
+    z-index: 15;
+}
+
+header .overlay .carousel .carousel-item .carousel-content h2 {
+    color: #ffffff;
+    font-size: 40px;
+    padding-bottom: 55px;
+}
+
+header .overlay .carousel .carousel-item .carousel-content a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #16aeca;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 5px 45px;
+    transition: all 0.5s ease;
+}
+
+header .overlay .carousel .carousel-item .carousel-content a:hover {
+    background-color: #dae413;
+    color: #16aeca;
+}
+/* End Header Style */
+/* Services Style */
+section.services {
+    padding: 120px 0;
+    min-height: 750px;
+}
+section.services .services-title h3 {
+    font-size: 40px;
+    color: #070c0c;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+
+section.services .card {
+    height: 270px;
+    padding: 50px;
+    margin-bottom: 20px;
+    transition: all 1s ease-in-out;
+}
+section.services .card .card-img {
+    padding: 15px 0;
+}
+section.services .card .card-block p {
+    font-size: 15px;
+    line-height: 21px;
+    color: #919191;
+    padding: 15px 0;
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+}
+section.services .card:hover {
+    height: 370px;
+}
+section.services .card:hover .card-block p {
+    opacity: 1;
+}
+
+/* End Services Style */
+/* Gallery Style */
+section.gallery {
+    min-height: 700px;
+}
+
+section.gallery .gallery-title h3 {
+    font-size: 40px;
+    color: #070c0c;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+
+section.gallery .gallery-work a.gallery-link {
+    position: relative;
+    display: block;
+}
+
+section.gallery .gallery-work a.gallery-link img {
+    width: 100%;
+}
+
+section.gallery .gallery-work a.gallery-link .gallery-hover {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width:90%;
+    height: 90%;
+    background-color: rgba(42,175,198,0.8);
+    opacity: 0;
+    z-index: 5;
+    transition: all 0.5s ease;
+}
+section.gallery .gallery-work a.gallery-link .gallery-hover i {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    font-size: 36px;
+    color: #fff;
+    transform: translate(50%,50%);
+}
+
+section.gallery .gallery-work a.gallery-link:hover .gallery-hover{
+    opacity: 1;
+}
+
+section.gallery .gallery-work .gallery-overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    padding: 5% 10%;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all 1s ease;
+    z-index: -300;
+    opacity: 0;
+    margin-top: -100vh;
+}
+section.gallery .gallery-work .gallery-overlay:target {
+    opacity: 1;
+    margin-top: 0;
+    z-index: 300;
+}
+
+section.gallery .gallery-work .gallery-overlay img {
+    width: 100%;
+}
+
+section.gallery .gallery-work .gallery-overlay .overlay-text h4 {
+    font-size: 36px;
+    color: #16aeca;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+section.gallery .gallery-work .gallery-overlay .overlay-text ul {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #919191;
+}
+section.gallery .gallery-work .gallery-overlay .overlay-text ul li a,
+section.gallery .gallery-work .gallery-overlay .overlay-text ul li a i {
+    text-decoration: none;
+    color: #555;
+    font-family: sans-serif;
+}
+
+section.gallery .gallery-work .gallery-overlay .overlay-text p {
+    color: #919191;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 50px;
+}
+
+section.gallery .gallery-work .gallery-overlay .overlay-text a.btn {
+    color: #fff;
+    background-color: #16aeca;
+    border-radius: 25px;
+    padding: 10px 40px;
+
+}
+
+section.gallery .gallery-work .gallery-overlay .overlay-text a.btn:hover {
+    background-color: #16aeca;
+    color: #dae413;
+}
+section.gallery .gallery-work .gallery-overlay a.close {
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #16aeca;
+}
+/* End Gallery Style */
+/* Statistics Style */
+section.statistics {
+    min-height: 400px;
+    background-image: url(../images/bg2.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+section.statistics .overlay {
+    background-color: rgba(22,174,202,0.8);
+    padding: 140px 0 100px;
+    text-align: center;
+
+}
+
+section.statistics .overlay .count {
+    color: #ddfaff;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 50px auto 30px;
+
+}
+
+section.statistics .overlay span.counter {
+    color: #85ecff;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 50px auto 30px;
+}
+/* End Statistics Style */
+/* Contacts Style */
+section.contacts {
+    padding: 100px 0 60px;
+}
+section.contacts .map iframe {
+    width: 90%;
+    height: 200px;
+}
+section.contacts .contact-addresses {
+    color: #16aeca;
+}
+section.contacts .contact-addresses h4 {
+    font-size: 24px;
+    color: #181c1c;
+    padding: 10px 0;
+}
+section.contacts .contact-addresses ul {
+    list-style: none;
+    padding-right: 0;
+}
+section.contacts .contact-addresses ul li i {
+    padding: 5px 5px;
+}
+section.contacts .contact-addresses ul li address {
+    display: inline;
+}
+section.contacts .contact-text h3 {
+    font-size: 24px;
+    color: #181c1c;
+    padding: 70px 0 20px;
+    font-weight: bold;
+}
+section.contacts .contact-form {
+    width: 60%;
+    margin: auto;
+}
+section.contacts .contact-form input,
+section.contacts .contact-form textarea {
+    background-color: #f7f7f7;
+    border: 2px solid #eeeeee;
+    color: #5c5c5c;
+    font-size: 15px;
+    border-radius: 3px;
+    line-height: 25px;
+    text-align: right;
+}
+section.contacts .contact-form input:focus,
+section.contacts .contact-form textarea:focus {
+    box-shadow: none;
+}
+section.contacts .contact-form button {
+    background-color: #85ecff;
+    color: #fff;
+    border: 0;
+    padding: 10px 30px;
+    width: auto;
+    font-size: 18px;
+    margin-right: 12px;
+}
+section.contacts .contact-form button:hover {
+    background-color: #dae413;
+    color: #16aeca;
+}
+/* End Contacts Style */
+/* Footer Style */
+footer.footer .top-footer{
+    padding: 75px 0;
+    background-color: #171717;
+}
+
+footer.footer .top-footer h5 {
+    font-size: 18px;
+    line-height: 45px;
+    color: #85ecff;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+footer.footer .top-footer h5::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid #5c5c5c;
+    height: 2px;
+    width: 30px;
+    transition: all 0.5s ease-in-out;
+
+}
+footer.footer .top-footer h5:hover::after{
+    width: 30px;
+    border-bottom: 3px solid #16aeca;
+}
+
+footer.footer .top-footer .about-us p {
+    font-size: 15px;
+    color: #919191;
+}
+
+footer.footer .top-footer .about-us ul a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #333333;
+    color: #acacac;
+    display: block;
+    text-align: center;
+    border-radius: 2px;
+    margin: 60px 0;
+    transition: all 0.5s ease;
+}
+
+footer.footer .top-footer .about-us ul a:hover {
+    background-color:  #16aeca;
+    color: #ffffff;
+}
+footer.footer .top-footer .contact-us ul.contact-list {
+    list-style: none;
+    font-size: 18px;
+    line-height: 50px;
+    color: #16aeca;
+    padding-right: 0;
+}
+
+footer.footer .top-footer .contact-us ul.contact-list li i {
+    background-color: #282828;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #bababa;
+    border-radius: 2px;
+    margin-left: 20px;
+    transition: all 0.5s ease;
+}
+
+footer.footer .top-footer .contact-us ul.contact-list li:hover i {
+    background-color:  #16aeca;
+    color: #fff;
+}
+footer.footer .copyright {
+    background-color: #111111;
+}
+
+footer.footer .copyright p {
+    text-align: center;
+    font-size: 18px;
+    color: #919191;
+    padding: 35px 0;
+    margin-bottom: 0 !important;
+}
+/* End Footer Style */
+
+/* Media Queries Screen */
+@media(max-width:992px) {
+    section.services .card {
+        padding: 20px;
+        min-height: 420px;
+        max-height: 420px;
+    }
+    section.services .card .card-img {
+        margin-bottom: 25px;
+    }
+    section.services .card .card-block h4 {
+        font-size: 20px;
+    }
+    section.services .card .card-block p {
+        opacity: 1;
+    }
+    section.contacts .map iframe {
+        width: 100%;
+    }
+    section.contacts .contact-form {
+        width: 80%;
+    }
+    section.contacts .contact-form button {
+        border-radius: 4px;
+    }
+
+    section.gallery .gallery-work .gallery-overlay img {
+        display: none;
+    }
+}
+@media(max-width:576px){
+    header .overlay .carousel button {
+        display: none;
+    }
+}
+
+
+
+/* End Media Queries Screen */

@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+/* Header Style */
+header.header {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header.header .overlay {
+    background-color: rgba(223,63,59,0.8);
+    padding-top: 90px;
+    position: relative;
+}
+header.header .overlay .header-block {
+    margin-top: 120px;
+}
+header.header .overlay .header-block .header-brand  {
+    margin-bottom: 50px;
+}
+
+header.header .overlay .header-block h1 {
+    font-size: 30px;
+    line-height: 38px;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+header.header .overlay .header-block p {
+    font-size: 18px;
+    line-height: 33px;
+    color: #fff;
+    margin-bottom: 85px;
+}
+header.header .overlay .header-buttons a {
+    text-decoration: none;
+    margin: 5px; /* Spacing between button */
+}
+header.header .overlay .header-buttons a img {
+    width: 250px;
+    height: 65px;
+    margin-bottom: 90px;
+}
+
+/* header.header .overlay .header-buttons a:last-child img {
+    height: 65px;
+    width: 250px;
+} */
+
+header.header .overlay .header-img img {
+    max-width: 100%;
+    position: absolute;
+    bottom: -310px;
+    right: 200px;
+}
+/* End Header Style */
+/* Features Style */
+section.features-app {
+    padding: 80px 0;
+    background-color: #fff;
+    position: relative;
+}
+section.features-app .features {
+    margin-top: 90px;
+}
+section.features-app .features.text-left{
+    direction: ltr;
+}
+
+section.features-app .features .d-flex {
+    margin-bottom: 50px;
+}
+
+section.features-app .features .d-flex .flex-shrink-0 i {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background-color: #ef473a;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    border-radius: 2px;
+}
+
+section.features-app .features h5 {
+    font-size: 24px;
+    color: #080808;
+}
+
+section.features-app .features p {
+    font-size: 15px;
+    color: #757474;
+}
+
+section.features-app .features .features-img img {
+    width: 80%;
+}
+/* End Features Style */
+/* Options Style */
+section.options-app {
+    background-color: #f9f8f8;
+    padding-top: 120px;
+    position: relative;
+}
+
+section.options-app .options {
+    margin-top: 40px;
+    margin-right: 40px;
+}
+section.options-app .options .d-flex {
+    margin-bottom: 65px;
+}
+
+section.options-app .options-img img {
+    position: absolute;
+    bottom: -120px;
+}
+
+section.options-app .options .d-flex h5 {
+    font-size: 24px;
+    color: #141414;
+    padding-top: 8px;
+}
+section.options-app .options .d-flex p {
+    font-size: 15px;
+    color: #757474;
+    line-height: 26px;
+}
+/* End Options Style */
+/* Slider Style */
+section.sliders {
+    background-color: #ffffff;
+    padding: 80px 0;
+    position: relative;
+}
+section.sliders .slider-text h3 {
+    font-size: 36px;
+    color: #141414;
+    padding-bottom: 60px;
+}
+
+section.sliders .slider-carousel .carousel-inner {
+    width: 60%;
+    margin: auto;
+}
+
+section.sliders .slider-carousel .carousel-control-prev,
+section.sliders .slider-carousel .carousel-control-next {
+    width: 70px;
+    height: 70px;
+    color: #ef473a;
+    border-radius: 50%;
+    border: 1px solid #ef473a;
+    margin-top: 140px;
+}
+
+section.sliders .slider-carousel .carousel-indicators button {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ef473a;
+    border-radius: 50%;
+    position: relative;
+    bottom: -60px;
+}
+section.sliders .slider-carousel .carousel-indicators button.active{
+    background-color: #ef473a;
+}
+/* End Slider Style */
+/* FAQ Style */
+section.faq {
+    background-image: url(../images/bg-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section.faq .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 70px 0;
+}
+section.faq .overlay .faq-title h3{
+    font-size: 30px;
+    color: #ffffff;
+    padding-bottom: 60px;
+}
+
+section.faq .overlay .accordion .accordion-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 25px;
+}
+
+section.faq .overlay .accordion .accordion-item .accordion-header .accordion-button {
+    background-color: transparent;
+    color: #fff;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+section.faq .overlay .accordion .accordion-item .accordion-header .accordion-button span {
+    font-size: 18px;
+}
+
+section.faq .overlay .accordion .accordion-item .accordion-header button::after{
+    content: none;
+}
+section.faq .overlay .accordion .accordion-item .accordion-header button i {
+    margin-right: auto;
+}
+section.faq .overlay .accordion .accordion-item .accordion-header button i,
+section.faq .overlay .accordion .accordion-item .accordion-header button.collapsed i{
+    transition: all 0.5s ease-in-out;
+}
+section.faq .overlay .accordion .accordion-item .accordion-header button.collapsed i  {
+    transform: rotate(180deg);
+    
+}
+section.faq .overlay .accordion .accordion-item .accordion-body p {
+    color: #c9c9c9;
+    font-size: 15px;
+}
+/* End FAQ Style */
+/* Footer Style */
+footer.footer {
+    background-color: #232323;
+    padding-top: 70px;
+}
+
+footer.footer .top-footer {
+    padding-bottom: 90px;
+    border-bottom: 2px solid #282828;
+    
+}
+
+footer.footer .top-footer .widget h4 {
+    font-size: 24px;
+    line-height: 25px;
+    color: #f4f8fb;
+    border-bottom: 2px solid #282828;
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+    position: relative;
+}
+footer.footer .top-footer .widget h4::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 90px;
+    height: 2px;
+    background-color: #853630;
+    bottom: -2px;
+}
+
+footer.footer .top-footer .widget p {
+    font-size: 18px;
+    line-height: 40px;
+    color: #757474;
+    margin-bottom: 100px;
+}
+footer.footer .top-footer .widget .list-inline .list-inline-item a {
+    background-color: #343637;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+footer.footer .top-footer .widget .list-inline .list-inline-item a:hover {
+    background-color: #ef473a;
+    cursor: pointer;
+}
+
+footer.footer .top-footer .widget ul.tweets {
+    list-style: none;
+    padding: 0;
+}
+
+footer.footer .top-footer .widget ul.tweets i {
+    color: #ef473a;
+}
+footer.footer .top-footer .widget ul.tweets li:not(:last-child){
+    border-bottom: 2px solid #292828;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    
+}
+footer.footer .top-footer .widget ul.tweets p {
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 25px;
+    display: inline;
+    
+
+}
+
+footer.footer .top-footer .widget form.form-group input {
+    background-color: #2c2b2b;
+    border: 0;
+    text-align: right;
+    border-radius: 0;
+    line-height: 38px;
+    color: #d0d0d0;
+}
+footer.footer .top-footer .widget form.form-group input:focus,
+footer.footer .top-footer .widget form.form-group button.btn:focus{
+    box-shadow: none;
+    color: #fff;
+}
+
+footer.footer .top-footer .widget form.form-group button.btn {
+    background-color: #ef473a;
+    width: 190px;
+    height: 40px;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 14px;
+}
+
+footer.footer .copyright {
+    background-color: #232323;
+
+}
+footer.footer .copyright p {
+    font-size: 15px;
+    line-height: 40px;
+    color: #565656;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 25px 0;
+}
+/* End Footer Style */
+/* Media Queries */
+@media(max-width:1200px) {
+    section.options-app {
+        padding-top: 40px;
+    }
+    section.options-app .options .d-flex {
+        margin-bottom: 20px;
+    }
+    section.options-app .options-img img {
+        width: 35%;
+        height: 500px;
+        bottom: -80px;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    header.header .overlay {
+        padding-top: 0;
+    }
+    header.header .overlay .header-img img {
+        right: 70px;
+    }
+    header.header .overlay .header-buttons a img {
+        width: 180px;
+    }
+    section.features-app .features {
+        margin-top: 30px;
+    }
+    section.features-app .features .d-flex {
+
+        margin-right: 40px;
+    }
+    section.features-app .features .d-flex .flex-shrink-0 i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+    }
+    section.features-app .features .d-flex h5 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    section.features-app .features p {
+        font-size: 12px;
+    }
+    section.features-app .features-img img {
+        width: 100%;
+        height: 500px;
+    }
+    section.features-app .features.text-left .d-flex {
+        margin-left: 40px;
+    }
+    footer.footer .top-footer .widget .list-inline .list-inline-item a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    header.header .overlay {
+        padding-top: 0;
+        padding-bottom: 400px;
+        text-align: center;
+    }
+    header.header .overlay .header-buttons a img {
+        width: 240px;
+    }
+    header.header .overlay .header-img img {
+        right: 25%;
+        bottom: -500px;
+    }
+    header.header .overlay .header-buttons a img {
+        margin-bottom: 30px;
+    }
+    section.features-app {
+        padding: 0px 40px;
+    }
+    section.options-app {
+        padding-bottom: 200px;
+    }
+    section.options-app .options-img img {
+        width: 370px;
+        height: 500px;
+        bottom: -285px;
+        right: 65px;
+    }
+    .carousel {
+        margin: auto 30px;
+    }
+    section.sliders .slider-carousel .carousel-control-prev, 
+    section.sliders .slider-carousel .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        margin-top: 40px;
+    }
+    footer.footer .top-footer .widget p {
+        margin-bottom: 50px;
+    }
+    footer.footer .top-footer .widget {
+        margin-bottom: 100px;
+    }
+    footer.footer .top-footer .widget form.form-group {
+        margin: auto 30px;
+    }
+    footer.footer .top-footer {
+        padding-bottom: 60px;
+    }
+}
+/* End Media Queries */
